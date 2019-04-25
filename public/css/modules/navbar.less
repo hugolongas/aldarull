@@ -1,0 +1,40 @@
+@import 'vars';
+.navegacio{
+	background-color: black !important;
+	@media @media-laptop{
+		height:60px;		
+	}
+	.navbar-brand{
+		display: block;
+		width:200px;
+		@media @media-laptop{
+			width:250px;
+		}
+	}
+	.navbar-nav{
+		margin: 0px auto;
+		.nav-item{
+			margin-right:10px;
+			margin-left:10px;
+			&:first-child{
+				margin-left:0px;
+			}
+			&:last-child{
+				margin-right:0px;
+			}
+			.nav-link{
+				color:@color-white;
+				font-family:@font-roboto-bold;
+				font-size:20px;
+				&:hover{
+					color:@color-red;
+				}
+			}
+
+			.active{				
+				color:@color-red;				
+			}			
+		}
+	}
+}
+

@@ -1,0 +1,65 @@
+#main{	
+	&.gallery{
+		.fileList{
+			width: 100%;
+			height: 75vh;
+			border: 1px solid black;
+			border-radius: 5px;
+			list-style-type: none;
+			margin: 0;
+			padding: 10px;
+			overflow: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			li{
+				float: left;
+				margin: 2px;
+				padding: 2px;
+				width: 250px;
+				height: 250px;
+			}
+			.ui-selected {
+				background: red;
+			}
+			.element-content{		
+				position:relative;		
+				background-color: #E3E3E3;								
+				cursor: pointer;
+				border: 1px solid gray;	
+				.img-element{
+
+				}
+				.img-delete{
+					position: absolute;
+					width: 50px;
+					height: 50px;
+					bottom: 5px;
+					right: 0px;
+				}
+			}
+			.highlight {
+				border: 1px solid red;
+				font-weight: bold;
+				font-size: 45px;
+				background-color: lightblue;
+				position:relative;
+			}
+		}
+	}
+}
+.loadingDiv{
+	position: fixed;
+	display: none;
+	width: 100%;
+	top: 0px;
+	background-color: #353535e6;
+	height: 100vh;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	img{
+		position: relative;
+		top: 25vh;
+	}
+}

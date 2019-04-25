@@ -1,0 +1,78 @@
+@import 'vars';
+.warpper.schedule{
+	margin-top:80px;
+	@media @media-laptop{
+		margin-top:140px;
+	}
+	.schedule-container{
+		display: flex;
+		flex-wrap: wrap;
+		margin-top:40px;
+		.schedule-item{
+			color:@color-white;
+			background-color:@color-black;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			@media @media-laptop{
+				padding-bottom: 20px;				
+				margin-left:5px;
+				margin-right:5px;
+			}
+			.schedule-date-day{
+				font-family:@font-roboto-bold;
+				font-size: 50px;
+				color: @color-red;
+				line-height: 50px;
+				margin-bottom: 10px;
+				padding-top:10px;
+				@media @media-laptop{
+					font-size: 190px;
+					line-height: 190px;
+				}
+			}
+			.schedule-date-month{				
+				font-size:15px;
+				line-height:35px;
+				margin-bottom:20px;
+				@media @media-laptop{
+					font-size:40px;
+				}
+			}
+			.schedule-date-event{				
+				font-size:24px;
+				line-height:20px;
+				text-align: left;
+				margin-bottom:15px;
+				padding-left:10px;
+				min-height: 24px;
+				@media @media-laptop{
+					font-size:35px;
+					line-height:35px;
+				}
+			}
+			.schedule-date-place{
+				font-size:20px;
+					line-height:10px;
+					padding-left:10px;
+					text-align: left;
+					margin-bottom:15px;
+				@media @media-laptop{
+					font-size:24px;
+					line-height:24px;
+					padding-left:10px;
+					text-align: left;
+					margin-bottom:15px;
+				}
+			}
+			.schedule-date-time{
+				@media @media-laptop{
+					font-size:24px;
+					line-height:24px;
+					padding-left:10px;
+					text-align:left;
+					margin-bottom:15px;
+				}
+			}
+		}
+	}
+}

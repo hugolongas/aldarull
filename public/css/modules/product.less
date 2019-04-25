@@ -1,0 +1,96 @@
+@import 'vars';
+.warpper.product{
+	text-align:center;
+	margin-top:80px;
+	@media @media-laptop{
+		margin-top:140px;
+	}
+	.product-container{
+		text-align: left;
+		.product-img{
+
+		}
+		.product-data{
+			text-align: left;
+			font-size: 35px;
+			.product-name{
+				font-size: 50px;
+			}
+			.product-price{
+
+			}
+			.product-desc{
+
+			}
+			.product-extra{
+				clear: both;
+				overflow: hidden;
+				margin-bottom: 10px;
+				.product-extra-options{
+					margin-bottom: 10px;
+					overflow: hidden;
+					.pExtra-option{
+						.labl {
+							display : block;
+							width: 40px;
+							height:40px;
+							float:left;
+							margin: 10px;
+							background-color:#d4cece;
+							@media @media-laptop{
+								width: 60px;
+								height:60px;
+							}
+						}
+						.labl > input{ /* HIDE RADIO */
+							visibility: hidden; /* Makes input not-clickable */
+							position: absolute; /* Remove input from document flow */
+						}
+						.labl > input + div{ /* DIV STYLES */
+							cursor:pointer;
+							border:2px solid transparent;
+							width:40px;
+							height:40px;
+							@media @media-laptop{
+								width: 60px;
+								height:60px;
+							}
+						}
+						.labl > input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+							background-color: #7b7b7b;
+							border: 1px solid #000;
+							color: #fff;
+						}
+						.pExtra-text {
+							text-align: center;
+							vertical-align: middle;
+							display: table-cell;
+							font-size: 25px;
+							color: #8d8d8d;
+							@media @media-laptop{
+								font-size: 34px;
+							}
+						}
+					}
+				}							
+
+			}
+		}
+		.product-cont-qty{
+			clear:both;
+			.form-input{
+				width: 40px;
+				height: 35px;				
+				border: none;				
+				margin-left: 20px;				
+				font-size: 20px;
+				@media @media-laptop{
+					margin-left: 25px;
+					font-size:25px;
+				}
+			}
+		}
+
+	}
+
+}

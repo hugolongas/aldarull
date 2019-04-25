@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings": 
+	{
+		"xdebug": {
+			"path_mapping": {
+				"/laragon/www/aldarull" : "C:/laragon/www/aldarull",                
+			},
+			"url": "http://gestio.aldarull.local",
+			"super_globals": true,
+			"close_on_stop": true
+		}
+	}
+}

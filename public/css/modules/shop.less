@@ -1,0 +1,39 @@
+@import 'vars';
+.warpper.shop{
+	margin-top:80px;
+	@media @media-laptop{
+		margin-top:140px;
+	}
+	.center-section{
+		padding-top:50px;
+	}
+	.shop-text{
+		font-size:24px;
+	}
+	.shop-container{
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom:10px;
+		margin-top: 40px;
+
+		.shop-item{
+			padding:5px;
+			.product{
+				background-color: #cbcbcb;
+				padding: 10px;
+				.product-info{
+					font-size:20px;
+					.product-name{
+						color:#000;
+						text-align: center;
+						font-family: @font-coco;
+					}
+					.pdroduct-price{
+						text-align: left;
+						color:#938d8d;
+					}
+				}
+			}
+		}
+	}
+}

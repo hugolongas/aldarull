@@ -1,0 +1,26 @@
+@import 'vars';
+.warpper.gallery{
+	text-align:center;
+	margin-top:80px;
+	@media @media-laptop{
+		margin-top:140px;
+	}
+	.gallery-container{
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom:10px;
+		margin-top: 40px;
+		.gallery-item{
+			padding: 5px 5px 5px 5px;
+			width: 100%;
+			overflow: hidden;
+			.img-fluid{
+				//width:90px;
+				@media @media-laptop{
+					width:100%;
+				}
+			}
+			
+		}
+	}
+}

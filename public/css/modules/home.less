@@ -1,0 +1,412 @@
+@import 'vars';
+.warpper.main{
+	.home{
+		background-color:black;
+		width:100%;
+		height:40vh;
+		text-align:center;
+		margin-top:70px;
+		@media @media-laptop{
+			background-image:url("../../img/home.jpg");
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position:100% 100%;
+			margin-top:0px;
+			padding-top:90px;
+		}
+		#coverWidgets{
+			margin: 60px auto;
+			background-color: rgba(0,0,0,0.5);
+			@media @media-laptop{
+				height: 650px;	
+			}
+			.cover-widget{								
+				margin: 0px auto;
+				padding:0px 5px;
+				height: 325px;				
+				@media @media-laptop{
+					width: 1000px;
+					height: 683px;
+				}
+				&.empty{					
+					.logo-header{
+						background-image: url("../../img/aldarull-title_white.png");
+						width: 50%;
+						height: 100%;
+						background-size: contain;
+						background-repeat: no-repeat;
+						margin: 0px auto;
+					}
+				}
+				&.video{
+					.cover-title{
+						color: white;
+						@media @media-laptop{
+							font-size: 40px;
+							padding-top: 20px;
+						}
+					}
+					iframe{
+						@media @media-laptop{
+							width: 950px;
+							height: 500px;
+							margin-top: 40px;
+						}
+					}
+				}
+				&.file
+				{
+					.logo-header{
+						background-image: url("../../img/aldarull-title_white.png");
+						background-size: contain;
+						background-repeat: no-repeat;
+						margin: 0px auto;
+						width:100px;
+						height: 100px;
+						@media @media-laptop{
+							width: 300px;
+							height: 300px;
+						}
+					}
+					.cover-text{
+						color: white;
+						font-size: 24px;
+						margin-bottom: 50px;
+						@media @media-laptop{
+							font-size: 40px;
+							padding: 0px 60px;
+						}
+					}
+				}
+				&.text{
+					.logo-header{
+						display: none;
+						@media @media-laptop{
+							display: block;
+							background-image: url("../../img/aldarull-title_white.png");
+							width: 300px;
+							height: 300px;
+							background-size: contain;
+							background-repeat: no-repeat;
+							margin: 0px auto;
+						}
+					}					
+					.cover-text{
+						color: white;
+						font-size: 15px;
+						margin-bottom: 50px;
+						padding: 0px 10px;
+						text-align: justify;
+						@media @media-laptop{
+							font-size: 24px;
+							padding: 0px 60px;
+						}
+					}
+				}
+			}
+		}
+
+		
+		
+		.desarrega-disc{
+			font-size:12px;
+			@media @media-laptop{
+				font-size:20px;
+			}
+		}
+	}
+	.weare{
+		background-color:@color-weare;
+		padding-top:60px;
+		@media @media-laptop{			
+		}
+		.weare-title{
+			position: absolute;
+			margin-top: 9px;
+			width: 100%;
+			font-size: 2.5em;
+			color:@color-black;
+			opacity: 0.06;
+			font-family:@font-coco; 
+			text-align:center;
+			@media @media-laptop{
+				font-size:9em;
+			}
+		}
+		.weare-container{						
+			margin-top:60px;
+			margin-bottom: 40px;
+			@media @media-laptop{
+				
+			}
+			.weare-media{
+				@media @media-laptop{
+				}
+				.carousel{
+					margin-bottom:10px;
+					@media @media-laptop{
+						margin:0px auto;
+					}
+					.carousel-inner{
+						.weare-cont{
+							height:200px;
+							@media @media-laptop{
+								height:800px;
+							}
+							.weare-img{
+								margin:0px auto;
+							}
+						}
+					}
+					.carousel-control-prev{						
+						color: #d22121;						
+						@media @media-laptop{
+							font-size: 60px;
+						}
+					}
+					.carousel-control-next{					
+						color: #d22121;						
+						@media @media-laptop{
+							font-size: 60px;
+						}
+					}
+				}
+			}
+			.weare-info{				
+				padding:0px 15px 0px 15px;
+				text-align: center;
+				margin-bottom:20px;
+				margin-top: 40px;
+				@media @media-laptop{
+				}
+				.weare-text{
+					@media @media-laptop{
+						text-align:justify;
+						font-size:25px;
+					}
+				}
+			}
+		}
+	}
+	.schedule{		
+		background-color:@color-schedule;
+		padding-top:60px;
+		@media @media-laptop{
+		}
+		.schedule-title{
+			position: absolute;
+			margin-top: 9px;
+			width: 100%;
+			font-size: 2.5em;
+			color:@color-black;
+			opacity: 0.06;
+			font-family:@font-coco; 
+			text-align:center;
+			@media @media-laptop{
+				font-size:9em;
+			}
+		}
+		.schedule-container{	
+			margin-top: 60px;
+			margin-bottom: 40px;
+			.carousel{
+				width: 320px;
+				margin: 0px auto 50px;
+				.carousel-inner{		
+					position: relative;
+					width: 70%;
+					overflow: hidden;
+					margin: 0px auto;
+					@media @media-laptop{
+						width: 100%;
+					}	
+					.carousel-item{
+						color:@color-white;
+						background-color:@color-black;
+						padding-bottom: 20px;
+						.schedule-date-day{
+							font-family:@font-roboto-bold;														
+							color: @color-red;
+							font-size: 70px;
+							line-height: 70px;
+							margin-bottom: 10px;
+							padding-top: 5px;
+							@media @media-laptop{
+								font-size: 190px;
+								line-height: 190px;								
+								padding-top:10px;
+							}
+						}
+						.schedule-date-month{							
+							font-size:25px;
+							line-height:15px;
+							margin-bottom:8px;
+							@media @media-laptop{
+								font-size:50px;
+								line-height:50px;
+								margin-bottom:10px;
+							}
+						}
+						.schedule-date-event{							
+							font-size:17px;
+							line-height:17px;
+							text-align: left;
+							margin-bottom:6px;
+							padding-left:10px;
+							min-height: 24px;
+							@media @media-laptop{
+								font-size:24px;
+								line-height:24px;
+								margin-bottom:15px;								
+							}
+						}
+						.schedule-date-place{							
+							font-size:17px;
+							line-height:17px;
+							padding-left:10px;
+							text-align: left;
+							margin-bottom:10px;
+							@media @media-laptop{
+								font-size:24px;
+								line-height:24px;								
+								margin-bottom:15px;
+							}
+						}
+						.schedule-date-time{
+							font-size:22px;
+							line-height:22px;
+							padding-left:10px;
+							text-align:left;
+							margin-bottom:10px;
+							@media @media-laptop{
+								font-size:24px;
+								line-height:24px;								
+							}
+						}
+					}
+				}
+			}
+			.arrow-container{
+				@media @media-laptop{
+					padding-top:15px;
+				}
+				.schedule-prev{				
+					display: block;
+					float: left;
+					margin-left: 20px;
+					@media @media-laptop{
+					}
+				}
+				.schedule-next{
+					display: block;
+					float: right;
+					margin-right: 20px;	
+					@media @media-laptop{
+					}
+				}
+				.schedule-hide{
+					visibility: hidden;
+				}
+			}
+		}
+	}
+	.gallery{
+		background-color:@color-gallery;
+		padding-top:60px;
+		@media @media-laptop{
+
+		}
+		.gallery-title{			
+			position: absolute;
+			margin-top: 9px;
+			width: 100%;
+			font-size: 2.5em;
+			color:@color-black;
+			opacity: 0.06;
+			font-family:@font-coco; 
+			text-align:center;
+			@media @media-laptop{
+				font-size:9em;
+			}
+		}
+		.gallery-container{
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 60px;
+			margin-bottom: 40px;
+			@media @media-laptop{
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 60px;
+				margin-bottom: 40px;
+			}
+			.gallery-item{
+				padding:5px 5px 5px 5px;
+				@media @media-laptop{
+					padding:5px 5px 5px 5px;
+				}
+				&:nth-child(n+5)
+				{
+					display: none;
+					@media @media-laptop{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.shop{
+		background-color:@color-shop;
+		padding-top:60px;
+		@media @media-laptop{
+		}
+		.shop-title{
+			position: absolute;
+			margin-top: 9px;
+			width: 100%;
+			font-size: 2.5em;
+			color:@color-black;
+			opacity: 0.06;
+			font-family:@font-coco; 
+			text-align:center;
+			@media @media-laptop{
+				font-size:9em;
+			}
+		}		
+		.shop-container{			
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 60px;
+			margin-bottom: 40px;
+			@media @media-laptop{
+			}
+			.shop-item{
+				padding:5px;
+				.product{
+					background-color:#cbcbcb;
+					padding:10px;
+					.product-info{
+						.product-name {
+							color: black;							
+							text-align: left;
+							font-family: @font-coco;
+							@media @media-laptop{
+								font-size: 20px;
+							}							
+						}
+						.product-price {
+							text-align: left;
+							color: #938d8d;
+							@media @media-laptop{
+								font-size: 18px;
+							}					
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
